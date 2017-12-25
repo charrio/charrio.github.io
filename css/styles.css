@@ -49,7 +49,7 @@ DESCRIPTION: A premium business and portfolio theme.
 	
 /* Custom Grid */
 
-	.container_12 						{margin-left:auto; margin-right:auto; width:1020px;}
+	.container_12 						{margin-left:auto; margin-right:auto; width:980px;}
 	.float								{display:inline; float:left; position:relative;}
 	.grid_1,
 	.grid_2,
@@ -62,7 +62,7 @@ DESCRIPTION: A premium business and portfolio theme.
 	.grid_9,
 	.grid_10,
 	.grid_11,
-	.grid_12 							{display:inline; float:left; position:relative; margin-left:20px; margin-right:20px;}
+	.grid_12 							{display:inline; float:left; position:relative; margin-left:10px; margin-right:10px;}
 	.container_12 .grid_1				{width:45px;}
 	.container_12 .grid_2 				{width:130px;}
 	.container_12 .grid_3 				{width:215px;}
@@ -70,11 +70,11 @@ DESCRIPTION: A premium business and portfolio theme.
 	.container_12 .grid_5 				{width:385px;}
 	.container_12 .grid_6 				{width:470px;}
 	.container_12 .grid_7 				{width:555px;}
-	.container_12 .grid_8 				{width:640px;}
+	.container_12 .grid_8 				{width:620px;}
 	.container_12 .grid_9 				{width:725px;}
 	.container_12 .grid_10 				{width:810px;}
 	.container_12 .grid_11 				{width:895px;}
-	.container_12 .grid_12 				{width:980px;}
+	.container_12 .grid_12 				{width:960px;}
 	
 /* Global Classes */
 
@@ -134,7 +134,8 @@ DESCRIPTION: A premium business and portfolio theme.
 
 	#quicknav							{background:url(../images/link_border.png) repeat-x;}
 	a .title 							{color:#000000;}
-	.quicknavgrid_3						{width:204px; margin:0px; padding:20px 20px 0; display:inline; float:left; position:relative; margin-left:1px;}
+	.quicknavgrid_3						{width:204px; margin:0px; padding:20px 18px 0; display:inline; float:left; position:relative; margin-left:1px;}
+	.lastelem							{padding-right:14px;}
 	.quicknav							{background:#FFFFFF;}
 	.quicknav:hover						{background:url(../images/link_bg.png) repeat-x;}
 	.quicknavhr							{margin-bottom:0;}
