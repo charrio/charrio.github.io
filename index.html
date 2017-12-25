@@ -7,14 +7,17 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/styles.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+<!--
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+-->
 	<!-- Scripts -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!--
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<!--[if IE 6]>
+  -->
+  <!--[if IE 6]>
 	<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
 	<script>
 	  /* EXAMPLE */
@@ -30,7 +33,7 @@
 <body>
 	<div id="wrapper" class="container_12 clearfix">
 
-    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+    <header >
 		<!-- Text Logo -->
 		<h1 id="logo" class="grid_4">Aurelius</h1>
 
@@ -44,77 +47,78 @@
 			<li><a href="index.html" class="current"><span class="meta">Homepage</span><br />Home</a></li>
 		</ul>
     </header>
+    <div id="content">
+  		<div class="hr grid_12">&nbsp;</div>
+  		<div class="clear"></div>
 
-		<div class="hr grid_12">&nbsp;</div>
-		<div class="clear"></div>
+  		<!-- Featured Image Slider -->
+  		<div id="featured" class="clearfix grid_12">
+  			<ul>
+  				<li>
+  					<a href="portfolio_single.html">
+  						<span>Read about this project</span>
+  						<img src="images/600x300.gif" alt="" />
+  					</a>
+  				</li>
+  				<li>
+  					<a href="portfolio_single.html">
+  						<span>Read about this project</span>
+  						<img src="images/600x300.gif" alt="" />
+  					</a>
+  				</li>
+  				<li>
+  					<a href="portfolio_single.html">
+  						<span>Read about this project</span>
+  						<img src="images/600x300.gif" alt="" />
+  					</a>
+  				</li>
+  				<li>
+  					<a href="portfolio_single.html">
+  						<span>Read about this project</span>
+  						<img src="images/600x300.gif" alt="" />
+  					</a>
+  				</li>
+  				<li>
+  					<a href="portfolio_single.html">
+  						<span>Read about this project</span>
+  						<img src="images/600x300.gif" alt="" />
+  					</a>
+  				</li>
+  			</ul>
+  		</div>
+  		<div class="hr grid_12 clearfix">&nbsp;</div>
 
-		<!-- Featured Image Slider -->
-		<div id="featured" class="clearfix grid_12">
-			<ul>
-				<li>
-					<a href="portfolio_single.html">
-						<span>Read about this project</span>
-						<img src="images/600x300.gif" alt="" />
-					</a>
-				</li>
-				<li>
-					<a href="portfolio_single.html">
-						<span>Read about this project</span>
-						<img src="images/600x300.gif" alt="" />
-					</a>
-				</li>
-				<li>
-					<a href="portfolio_single.html">
-						<span>Read about this project</span>
-						<img src="images/600x300.gif" alt="" />
-					</a>
-				</li>
-				<li>
-					<a href="portfolio_single.html">
-						<span>Read about this project</span>
-						<img src="images/600x300.gif" alt="" />
-					</a>
-				</li>
-				<li>
-					<a href="portfolio_single.html">
-						<span>Read about this project</span>
-						<img src="images/600x300.gif" alt="" />
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="hr grid_12 clearfix">&nbsp;</div>
+  		<!-- Caption Line -->
+  		<h2 class="grid_12 caption clearfix">Welcome! This is <span>Aurelius</span>, a slick, professional <u>Business</u> &amp; <u>Portfolio</u> theme built to engage the user in your work.</h2>
 
-		<!-- Caption Line -->
-		<h2 class="grid_12 caption clearfix">Welcome! This is <span>Aurelius</span>, a slick, professional <u>Business</u> &amp; <u>Portfolio</u> theme built to engage the user in your work.</h2>
+  		<div class="hr grid_12 clearfix quicknavhr">&nbsp;</div>
+  		<div id="quicknav" class="grid_12">
+  			<a class="quicknavgrid_3 quicknav alpha" href="portfolio.html">
+  					<h4 class="title ">Recent Work</h4>
+  					<p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
+  					<p style="text-align:center;"><img alt="" src="images/Art_Artdesigner.lv.png" /></p>
 
-		<div class="hr grid_12 clearfix quicknavhr">&nbsp;</div>
-		<div id="quicknav" class="grid_12">
-			<a class="quicknavgrid_3 quicknav alpha" href="portfolio.html">
-					<h4 class="title ">Recent Work</h4>
-					<p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
-					<p style="text-align:center;"><img alt="" src="images/Art_Artdesigner.lv.png" /></p>
+  			</a>
+  			<a class="quicknavgrid_3 quicknav" href="about.html">
+  					<h4 class="title ">Learn about us</h4>
+  					<p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
+  					<p style="text-align:center;"><img alt="" src="images/info.png" /></p>
 
-			</a>
-			<a class="quicknavgrid_3 quicknav" href="about.html">
-					<h4 class="title ">Learn about us</h4>
-					<p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
-					<p style="text-align:center;"><img alt="" src="images/info.png" /></p>
+  			</a>
+  			<a class="quicknavgrid_3 quicknav" href="blog.html">
+  					<h4 class="title ">Read our blog</h4>
+  					<p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
+  					<p style="text-align:center;"><img alt="" src="images/Blog_Artdesigner.lv.png" /></p>
 
-			</a>
-			<a class="quicknavgrid_3 quicknav" href="blog.html">
-					<h4 class="title ">Read our blog</h4>
-					<p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
-					<p style="text-align:center;"><img alt="" src="images/Blog_Artdesigner.lv.png" /></p>
-
-			</a>
-			<a class="quicknavgrid_3 quicknav" href="#">
-					<h4 class="title ">Follow on Twitter</h4>
-					<p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
-					<p style="text-align:center;"><img alt="" src="images/hungry_bird.png" /></p>
-			</a>
-		</div>
-		<div class="hr grid_12 clearfix">&nbsp;</div>
+  			</a>
+  			<a class="quicknavgrid_3 quicknav" href="#">
+  					<h4 class="title ">Follow on Twitter</h4>
+  					<p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
+  					<p style="text-align:center;"><img alt="" src="images/hungry_bird.png" /></p>
+  			</a>
+  		</div>
+  		<div class="hr grid_12 clearfix">&nbsp;</div>
+    </div>
 		<!-- Footer -->
 		<p class="grid_12 footer clearfix">
 			<span class="float"><b>&copy; Copyright</b> <a href="">QwibbleDesigns</a> - remove upon purchase.</span>
