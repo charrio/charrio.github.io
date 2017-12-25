@@ -4,7 +4,15 @@
     <script src="https://use.fontawesome.com/b189690ffa.js"></script>
     <link rel="icon" href="assets/salsa_icon_2.png">
     <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 500px;
+      }
 
+
+    </style>
 <title>Hugs & Salsa </title>
 
 <!-- Bootstrap core CSS -->
@@ -67,19 +75,55 @@
         <img src="assets/Lorna_Background.jpg" width="100%"/>
       </div>
 
-      <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
+      <div class="col-12 p-3 p-md-5 bg-light border border-white">
         <h3>Blog</h3>
         <p>Include Bootstrap's source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don't include documentation, but do include our build system and readme.</p>
       </div>
 
-      <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
+      <div  class="col-12 p-3 p-md-5 bg-light border border-white">
         <h3>Map</h3>
-        <p>Include Bootstrap's source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don't include documentation, but do include our build system and readme.</p>
+        <p>a</p>
+        <div id="map" width="100%">
+        </div>
       </div>
 
     </div>
   </main>
 </body>
+<script>
+
+     function initMap() {
+       var myLatLng = {lat: 37.333, lng: -121.894};
+       var latLng2 = {lat: 45.512, lng: -122.666};
+       var latLng3 = {lat: 45.988, lng: -123.925};
+
+       var map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 4,
+         center: myLatLng
+       });
+
+       var marker = new google.maps.Marker({
+         position: myLatLng,
+         map: map,
+         title: 'San Jose, CA'
+       });
+
+       var marker2 = new google.maps.Marker({
+         position: latLng2,
+         map: map,
+         title: 'Portland, OR'
+       });
+
+       var marker3 = new google.maps.Marker({
+         position: latLng3,
+         map: map,
+         title: 'Seaside, OR'
+       });
+     }
+   </script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEb9wqbopL8XYyyF4MsN5_JURDMOqpwO0&callback=initMap">
+   </script>
 <script>
 window.onscroll = function() {myFunction()};
 
