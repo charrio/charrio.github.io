@@ -13,6 +13,10 @@ body {
   overflow: hidden;
   background-color: #16b6d9;
   z-index: 9000;
+    padding-top: 0rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
 }
 
 .navbar a{
