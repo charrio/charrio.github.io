@@ -18,39 +18,33 @@
 <!-- Bootstrap core CSS -->
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/sticky.css" />
+  <link rel="stylesheet" href="css/parallax.css" />
 </head>
   <body>
-    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
-      <div class="container">
-        <span class="skiplink-text">Skip to main content</span>
-      </div>
-    </a>
-    <div class=" top-header">
-
-        <h2>Hugs & Salsa</h2>
-        <p>Salsa with passion...</p>
-      </div>
-    <header id="navbar" class="navbar topnav ">
-
-  <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
-    <img src="assets/salsa_dip.png" width="36" height="36">
-  </a>
-
-  <div class="navbar-nav-scroll">
-    <ul class="navbar-nav bd-navbar-nav flex-row">
-      <li class="nav-item">
-        <a class="nav-link active" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="/docs/4.0/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://blog.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
-      </li>
-    </ul>
+    <a id="linktotop" ></a>
+<div id ="bg0" class="bg1 header parallax" >
+<div class = "caption">
+  <span class="border">  HUGS & SALSA
+    </span>
   </div>
+</div>
 
+<div id="navbar0" class="navbar topnav ">
+  <ul class="navbar-nav bd-navbar-nav flex-row">
+    <li class="nav-item">
+      <a id ="link0" class="navbar-brand mr-0 mr-md-2" href="#linktotop"><img src="assets/salsa_dip.png" width="36" height="36"></a>
+    </li>
+    <li class="nav-item">
+      <a id ="link1" class="active"  href="#heading1">About</a>
+    </li>
+    <li class="nav-item">
+      <a id ="link2" href="#heading2">Map</a>
+    </li>
+    <li class="nav-item">
+      <a id ="link3" href="#heading3">Blog</a>
+    </li>
+  </ul>
   <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
 
     <li class="nav-item">
@@ -64,31 +58,92 @@
       </a>
     </li>
   </ul>
+</div>
 
-</header>
+<div class="content" >
+  <h3><a id ="heading1">  ABOUT</a></h3>
+  <p>The navbar will stick to the top when you reach its scroll position.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+<div id="bg2" class="parallax bg2" > </div>
 
-    <main id="main" class="content bd-masthead"  role="main">
-    <div class="container">
-      <div class="col-12  p-3 p-md-5 bg-light border border-white">
-        <h3>About</h3>
-        <p>Include Bootstrap's source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don't include documentation, but do include our build system and readme.</p>
-        <img src="assets/Lorna_Background.jpg" width="100%"/>
-      </div>
+<div id="navbar1" class="navbar topnav ">
+  <ul class="navbar-nav bd-navbar-nav flex-row">
+    <li class="nav-item">
+      <a id ="link0" class="navbar-brand mr-0 mr-md-2" href="#linktotop"><img src="assets/salsa_dip.png" width="36" height="36"></a>
+    </li>
+    <li class="nav-item">
+      <a id ="link1"  href="#heading1">About</a>
+    </li>
+    <li class="nav-item">
+      <a id ="link2" class="active" href="#heading2">Map</a>
+    </li>
+    <li class="nav-item">
+      <a id ="link3" href="#heading3">Blog</a>
+    </li>
+  </ul>
+  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
 
-      <div class="col-12 p-3 p-md-5 bg-light border border-white">
-        <h3>Blog</h3>
-        <p>Include Bootstrap's source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don't include documentation, but do include our build system and readme.</p>
-      </div>
-
-      <div  class="col-12 p-3 p-md-5 bg-light border border-white">
-        <h3>Map</h3>
-        <p>Follow us on our journey.</p>
-        <div id="map" width="100%">
+    <li class="nav-item">
+      <a class="nav-link p-3" href="https://www.instagram.com/bailaalliance352/" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-3" href="https://www.facebook.com/BailaAlliance352/" target="_blank" rel="noopener" aria-label="Twitter">
+        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="content" >
+  <h3><a id ="heading2">Map Example</a></h3>
+  <p>Follow us as we wander the globe.</p>
+<div id="map" width="100%">
         </div>
-      </div>
+</div>
+<div id="bg3" class="parallax bg3" > </div>
+<div id="navbar2" class="navbar topnav ">
+  <ul class="navbar-nav bd-navbar-nav flex-row">
+    <li class="nav-item">
+      <a id ="link0" class="navbar-brand mr-0 mr-md-2" href="#linktotop"><img src="assets/salsa_dip.png" width="36" height="36"></a>
+    </li>
+    <li class="nav-item">
+      <a id ="link1"   href="#heading1">About</a>
+    </li>
+    <li class="nav-item">
+      <a id ="link2" href="#heading2">Map</a>
+    </li>
+    <li class="nav-item">
+      <a id ="link3"class="active" href="#heading3">Blog</a>
+    </li>
+  </ul>
+  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
 
-    </div>
-  </main>
+    <li class="nav-item">
+      <a class="nav-link p-3" href="https://www.instagram.com/bailaalliance352/" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-3" href="https://www.facebook.com/BailaAlliance352/" target="_blank" rel="noopener" aria-label="Twitter">
+        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="content" >
+  <h3><a id ="heading3">Blog Example</a></h3>
+  <p>The navbar will stick to the top when you reach its scroll position.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+<div id="bg4" class="parallax bg1" > </div>
 </body>
 <script>
 
@@ -127,15 +182,40 @@
 <script>
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+var x =  document.getElementsByClassName("navbar");
+var locationArray = new Array
+for (i = 0; i < x.length; i++) {
+   locationArray[i]= x[i].offsetTop;
+}
 
-function myFunction() {
+
+function stickIt( sticky,  rank) {
+
+	navbar =document.getElementById("navbar" +rank); /*raNK */
+    link =document.getElementById("link"+(rank+1));
+    heading  =document.getElementById("heading"+(rank));
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
+    navbar.classList.remove("hide");
+
   } else {
     navbar.classList.remove("sticky");
+
+    if (rank>0) navbar.classList.add("hide");
+
   }
 }
+
+
+function myFunction(){
+
+var i;
+for (i = 0; i < x.length; i++) {
+   stickIt( locationArray[i], i);
+}
+}
+
+
+
 </script>
 </html>
