@@ -26,7 +26,8 @@ body {
   text-align: center;
   padding: 14px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: .75em;
+
 }
 
 .navbar a:hover {
@@ -54,8 +55,14 @@ body {
 }
 
 .hide {
-	visibility: hidden
-    }
+	visibility: hidden;
+  height: 60px;
+}
+
+.sticky + .heading {
+  padding-top: 60px;
+}
 
 .sticky + .content {
   padding-top: 60px;
+}
