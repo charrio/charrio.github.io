@@ -69,8 +69,14 @@
     font-weight: bold;
 }
 
-
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
+}
+
+/* accentuate text within page */
+.accentuate {
+  font-weight: bold;
+  font-size: 8.25rem; !important
+  color: red;
 }
