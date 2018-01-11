@@ -41,14 +41,11 @@ body {
 }
 
 .navbar a.active {
-  background-color: #000000;
+  background-color: #ffffff;
   color: #16b6d9;
   font-weight: bold;
 }
 
-.content {
-  padding: 16px;
-}
 
 .sticky {
   position: fixed;

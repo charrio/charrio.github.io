@@ -7,7 +7,6 @@ body, html {
 
 .parallax {
 
-
     /* Full height */
     height: 100%;
 
@@ -18,8 +17,6 @@ body, html {
     background-size: cover;
 
 }
-
-
 
 .caption {
   position: absolute;
@@ -62,14 +59,25 @@ h3 {
   color: #777;
   background-color:white;
   text-align:center;
-  padding:40px 80px;
+  padding: 5vmax 10vmax;
   text-align: justify;
+}
+
+
+.bg1, .bg2, .bg3, .bg4, .bg5 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .bg1 {
 	/* The image used */
     background-image: url("assets/bg1.png");
-    min-height: 100%;
+    min-height: 400px;
 }
 
 .bg2 {
@@ -81,6 +89,12 @@ h3 {
 .bg3 {
 	/* The image used */
     background-image: url("assets/bg3.jpg");
+    min-height: 400px;
+}
+
+.bg4 {
+	/* The image used */
+    background-image: url("assets/bg4.jpg");
     min-height: 400px;
 }
 

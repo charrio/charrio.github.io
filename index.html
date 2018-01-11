@@ -34,8 +34,6 @@
 </div>
 
 
-
-
 <div id="navbar0" class="navbar navbar-expand-md topnav ">
 
   <div class="navbar-header navbar-brand">
@@ -66,11 +64,9 @@
       </li>
     </ul>
 </div>
-
 <div class="content" >
   <div id ="about" class="marker hide"></div>
-  <h3><a>  ABOUT</a></h3>
-  <h4 class="tagline" >Hi! My name is Lorna B.     </h4>
+  <h4 class="tagline" >Hi! My name is Lorna B.  </h4>
 
   <p> <span class="accentuate"> Hugs &amp; Salsa </span> is a global salsa dance journey inspired from my travels as a community health promoter in Latin America and my dance background and upbringing in Puerto Rico. </p>
   <p> The project aims to be a <span class="accentuate"> cultural</span> exchange with other dance enthusiasts, regardless of dance discipline. </p>
@@ -78,27 +74,43 @@
   <p> Where <span class="accentuate">talents</span> are highlighted through the peered partnership of <a href="http://www.salserosenclave.com/">Salseros en Clave</a>, the #1 social media platform for salsa with over 150,000 followers.</p>
   <p> And participant personal growth and inclusivity are valued at the core of the <span class="accentuate">workshop</span> experience.</p>
 
+</div>
+<div id ="bg2" class="bg2 parallax" >
+  <div class = "caption">
+    <span class="border">  ABOUT </span>
+  </div>
+</div>
+<div class="content" >
+  <div id ="about" class="marker hide"></div>
+
   <div class="blockquote">
     <p class="quote"> As a conscientious and dynamic dancer, I care to encourage peer connections, intersectionality, body ownership, and holistic cross-training for my students, to support their unique style and empowered expression.</p>
   </div>
   <p> Lorna Bouret trained in Puerto Rico at Escuela Especializada en Ballet Julián E. Blanco and Academia de Bailes Iveth Mejías.  She holds an Anthropology degree from the University of Florida, and has mentored for organizations such as Peace Corps, Iniciativa Comunitaria, Gainesville Girls Rock Camp, and other service-learning institutions.  When not traveling, Lorna calls Gainesville, Florida home.</p>
 </div>
-<div id="bg2" class="parallax bg2" > </div>
+<div id="bg3" class="parallax bg3" >
+  <div class = "caption">
+    <span class="border">  OUR JOURNEY </span>
+  </div>
+</div>
 
 <div class="content" >
   <div id ="journey" class="marker hide"></div>
-  <h3><a>Map Example</a></h3>
-  <p>Follow us as we wander the globe.</p>
+
+  <p class="tagline">Follow us as we wander the globe.</p>
 <div id="map" width="100%">
         </div>
 </div>
-<div id="bg3" class="parallax bg3" > </div>
+<div id="bg5" class="parallax bg5" >
+  <div class = "caption">
+    <span class="border">  COLLABORATE </span>
+  </div>
+</div>
 
 
   <div class="content" >
     <div id ="collaborate" class="marker hide"></div>
-    <h3><a>COLLABORATE</a></h3>
-    <p>WHO CAN COLLABORATE</p>
+    <p class="tagline">WHO CAN COLLABORATE?</p>
     <div>
       Curious on how you can make a difference throughout this journey?
 (with icons)
@@ -111,7 +123,7 @@ Even if you are willing to host or provide me and my partner housing (who is a j
 
     </div>
   </div>
-<div id="bg4" class="parallax bg5" > </div>
+<div id="bg4" class="parallax bg4" > </div>
 </body>
 
 
@@ -176,14 +188,25 @@ function stickIt( sticky,  rank) {
   }
 }
 
+function highlight(sticky,rank){
+  link =document.getElementById("link"+(rank+1));
+  if (window.pageYOffset >= sticky) {
+    link.classList.add("active");
+  }
+  else {
+    link.classList.remove("active");
+  }
+}
+
+
+
 
 function myFunction(){
 
-var i;
-for (i = 0; i < x.length; i++) {
+  var i;
+  for (i = 0; i < x.length; i++) {
    stickIt( locationArray[i], i);
-
-}
+  }
 }
 
 
