@@ -11,7 +11,7 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 500px;
+        height: 400px;
       }
 
 
@@ -112,8 +112,8 @@
     <div id ="collaborate" class="marker hide"></div>
     <p class="tagline">WHO CAN COLLABORATE?</p>
     <div>
-      Curious on how you can make a difference throughout this journey?
-(with icons)
+      <p>Curious on how you can make a difference throughout this journey? </p>
+
 
 
 Whether you are a Latin dance startup studio, an established academy, or a congress promoter.
@@ -198,18 +198,14 @@ function highlight(sticky,rank){
   }
 }
 
-
-
-
 function myFunction(){
 
   var i;
   for (i = 0; i < x.length; i++) {
-   stickIt( locationArray[i], i);
+   stickIt(locationArray[i], i);
+   highlight(locationArray[i], i);
   }
 }
-
-
 
 </script>
 
