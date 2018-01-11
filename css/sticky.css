@@ -13,10 +13,14 @@ body {
   overflow: hidden;
   background-color: #16b6d9;
   z-index: 9000;
-    padding-top: 0rem;
-    padding-right: 1rem;
-    padding-bottom: 0rem;
-    padding-left: 1rem;
+
+}
+
+@media (min-width: 768px) {
+    nav.navbar {
+        max-height: 60px;
+        overflow: hidden;
+    }
 }
 
 .navbar a{
@@ -50,7 +54,6 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  display: relative;
   visibility: visible ;
   bottom: 93%;
 }
@@ -68,15 +71,12 @@ body {
   padding-top: 60px;
 }
 
-.p-3a {
-  height: 3rem!important;
-  padding: 1.5rem;
-}
+
 
 /* accentuate text within page */
 .accentuate {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 3.5vmin;
 }
 
 .blockquote {
