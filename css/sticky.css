@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-size: 28px;
+  font-size: 2vmin;
 }
 
 .header {
@@ -26,7 +26,7 @@ body {
   text-align: center;
   padding: 14px;
   text-decoration: none;
-  font-size: .75em;
+  font-size: 2.5vmin;
 
 }
 
@@ -52,6 +52,7 @@ body {
   width: 100%;
   display: relative;
   visibility: visible ;
+  bottom: 93%;
 }
 
 .hide {
@@ -88,11 +89,16 @@ body {
 .blockquote:before {
   color: #ccc;
   content: open-quote;
-  font-size: 4em;
+  font-size: 3vmax;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
 .blockquote p {
   display: inline;
+}
+
+.tagline {
+  font: "Lato", sans-serif;
+  font-size: 3.5vmax;
 }

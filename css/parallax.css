@@ -34,14 +34,14 @@ body, html {
   background-color: #111;
   color: #fff;
   padding: 18px;
-  /*font-size: 25px; */
+  font-size: 3vmin;
   letter-spacing: 10px;
 }
 
 h2 {
   letter-spacing: 5px;
   text-transform: uppercase;
-  font: 35px "Lato", sans-serif;
+  font: 4vmax "Lato", sans-serif;
   color: #111;
   text-align: center;
   margin-top: 1rem;
@@ -51,7 +51,7 @@ h2 {
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 3vmax "Lato", sans-serif;
   color: #111;
   text-align: center;
   margin-top: 1rem;

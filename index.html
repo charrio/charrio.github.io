@@ -86,7 +86,7 @@
 <div id="bg2" class="parallax bg2" > </div>
 
 <div class="content" >
-  <div id ="JOURNEY" class="hide"></div>
+  <div id ="journey" class="hide"></div>
   <h3><a>Map Example</a></h3>
   <p>Follow us as we wander the globe.</p>
 <div id="map" width="100%">
@@ -163,15 +163,14 @@ for (i = 0; i < x.length; i++) {
 function stickIt( sticky,  rank) {
 
 	navbar =document.getElementById("navbar" +rank); /*raNK */
-    link =document.getElementById("link"+(rank+1));
-    heading  =document.getElementById("heading"+(rank));
+
+
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
     navbar.classList.remove("hide");
 
   } else {
     navbar.classList.remove("sticky");
-
     if (rank>0) navbar.classList.add("hide");
 
   }
@@ -183,6 +182,7 @@ function myFunction(){
 var i;
 for (i = 0; i < x.length; i++) {
    stickIt( locationArray[i], i);
+
 }
 }
 
