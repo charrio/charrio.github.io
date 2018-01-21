@@ -46,6 +46,9 @@ body {
   font-weight: bold;
 }
 
+.navbar-brand {
+  padding: 5px;
+}
 
 .sticky {
   position: fixed;

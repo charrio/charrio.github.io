@@ -3,7 +3,7 @@
 <head>
 
 
-    <link rel="icon" href="assets/salsa_dip_teal.png">
+    <link rel="icon" href="assets/lb4.png">
     <meta charset="utf-8">
 
 
@@ -29,24 +29,26 @@
 <div id ="bg0" class="bg1 header parallax" >
   <div class = "caption">
   <span class="border">  HUGS &amp; SALSA </span>
+
   </div>
 </div>
+
 
 <div id="navbar0" class="navbar navbar-expand-md topnav ">
 
   <div class="navbar-header navbar-brand">
-      <a id ="link0" class="navbar-brand p-3" href="#linktotop"><img src="assets/salsa_dip_white.png" width="38" height="38"></a>
+      <a id ="link0" class="navbar-brand p-3" href="#linktotop"><img src="assets/lb4.png" width="60" height="60"></a>
   </div>
 
     <ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item">
-        <a id ="link1" class="section nav-link p-3"  href="#about">ABOUT</a>
+        <a id ="link1" class="nav-link p-3"  href="#about">ABOUT</a>
       </li>
       <li class="nav-item">
-        <a id ="link2" class="section nav-link p-3"  href="#journey">JOURNEY</a>
+        <a id ="link2" class="nav-link p-3"  href="#journey">JOURNEY</a>
       </li>
       <li class="nav-item">
-        <a id ="link3" class="section nav-link p-3"  href="#collaborate">COLLABORATE</a>
+        <a id ="link3" class="nav-link p-3"  href="#collaborate">COLLABORATE</a>
       </li>
     </ul>
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
@@ -63,8 +65,7 @@
     </ul>
 </div>
 <div class="content" >
-  <div id ="about1" class="marker hide"></div>
-
+  <div id ="about" class="marker hide"></div>
   <h4 class="tagline" >Hi! My name is Lorna B.  </h4>
 
   <p> <span class="accentuate"> Hugs &amp; Salsa </span> is a global salsa dance journey inspired from my travels as a community health promoter in Latin America and my dance background and upbringing in Puerto Rico. </p>
@@ -80,7 +81,7 @@
   </div>
 </div>
 <div class="content" >
-<div id ="about" class="marker hide"></div>
+  <div id ="about" class="marker hide"></div>
 
   <div class="blockquote">
     <p class="quote"> As a conscientious and dynamic dancer, I care to encourage peer connections, intersectionality, body ownership, and holistic cross-training for my students, to support their unique style and empowered expression.</p>
@@ -164,48 +165,45 @@ Even if you are willing to host or provide me and my partner housing (who is a j
 <script>
 window.onscroll = function() {myFunction()};
 
-var markers =  document.getElementsByClassName("marker");
-var links = document.getElementsByClassName("section");
-
+var x =  document.getElementsByClassName("navbar");
 var locationArray = new Array
-  navbarLoc = document.getElementsByClassName("navbar")[0].offsetTop;
-for (i = 0; i < markers.length; i++) {
-   locationArray[i]= markers[i].offsetTop;
+for (i = 0; i < x.length; i++) {
+   locationArray[i]= x[i].offsetTop;
 }
 
 
-function stickIt( sticky) {
+function stickIt( sticky,  rank) {
 
-	navbar =document.getElementById("navbar0"); /*rank */
+	navbar =document.getElementById("navbar" +rank); /*raNK */
+
 
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
+    navbar.classList.remove("hide");
+
   } else {
     navbar.classList.remove("sticky");
+    if (rank>0) navbar.classList.add("hide");
+
   }
 }
 
-function highlight(location,rank,links){
-  link = links[rank];  /*document.getElementById("link"+(rank)); */
-  var j;
-  if (window.pageYOffset >= location) {
-     link.classList.add("active");
-     for (j = 0; j < rank; j++)
-     {
-       links[j].classList.remove("active");
-     }
+function highlight(sticky,rank){
+  link =document.getElementById("link"+(rank+1));
+  if (window.pageYOffset >= sticky) {
+    link.classList.add("active");
   }
   else {
-     link.classList.remove("active");
+    link.classList.remove("active");
   }
 }
 
 function myFunction(){
 
-  stickIt(navbarLoc);
   var i;
-  for (i = 0; i < markers.length; i++) {
-   highlight(locationArray[i], i, links);
+  for (i = 0; i < x.length; i++) {
+   stickIt(locationArray[i], i);
+   highlight(locationArray[i], i);
   }
 }
 
