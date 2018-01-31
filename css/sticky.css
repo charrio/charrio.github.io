@@ -23,6 +23,7 @@ body {
     }
 }
 
+
 .navbar a{
   float: left;
   display: block;
@@ -87,12 +88,24 @@ body {
   quotes: "\201C""\201D""\2018""\2019";
 }
 .blockquote:before {
-  color: #ccc;
+  font: Georgia;
+  color: #808080;
   content: open-quote;
-  font-size: 3vmax;
-  line-height: 0.1em;
+  font-size: 4em;
+  line-height: 0;
+  vertical-align: -.41em;
+  padding: 0 .1em 0 .1em;
+  }
+
+.quote:after {
+  font: Georgia;
+  color: #808080;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.3em;
   margin-right: 0.25em;
-  vertical-align: -0.4em;
+  vertical-align: -0.57em;
+  padding: 0 0 0 .1em
 }
 .blockquote p {
   display: inline;
