@@ -1,4 +1,4 @@
-body {
+.body {
   margin: 0;
   font-size: 2vmin;
 }
@@ -50,6 +50,31 @@ body {
 .navbar-brand {
   padding: 5px;
 }
+
+.salsaBlue {
+  color: #16b6d9;
+  font-weight: bold;
+  font-size:2.6vmin !important ;
+}
+
+.signature {
+
+}
+.signature ul {
+  list-style-type: none;
+
+}
+
+.signature li{
+  float: left;
+  display: block;
+  text-align: justify;
+  text-decoration: none;
+  font-size: 2.4vmin;
+  font-weight: bold;
+  min-width: 100%;
+}
+
 
 .sticky {
   position: fixed;
