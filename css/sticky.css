@@ -10,23 +10,25 @@
 }
 
 .navbar {
-  overflow: hidden;
+
   background-color: #16b6d9;
   z-index: 9000;
 
 }
 
+/*
 @media (min-width: 768px) {
     nav.navbar {
         max-height: 60px;
         overflow: hidden;
     }
 }
+*/
 
 
 .navbar a{
   float: left;
-  display: block;
+  /*display: block;*/
   color: #ffffff;
   text-align: center;
   padding: 14px;
@@ -47,9 +49,10 @@
   font-weight: bold;
 }
 
+/*
 .navbar-brand {
   padding: 5px;
-}
+}*/
 
 .salsaBlue {
   color: #16b6d9;
