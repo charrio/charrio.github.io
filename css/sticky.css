@@ -16,19 +16,23 @@
 
 }
 
-/*
+.social-bar {
+  text-align: center;
+}
+
+
+
 @media (min-width: 768px) {
-    nav.navbar {
-        max-height: 60px;
-        overflow: hidden;
+    .sticky{
+      bottom:93%;
     }
 }
-*/
+
 
 
 .navbar a{
   float: left;
-  /*display: block;*/
+  display: block;
   color: #ffffff;
   text-align: center;
   padding: 14px;
@@ -49,10 +53,10 @@
   font-weight: bold;
 }
 
-/*
+
 .navbar-brand {
   padding: 5px;
-}*/
+}
 
 .salsaBlue {
   color: #16b6d9;
@@ -84,7 +88,7 @@
   top: 0;
   width: 100%;
   visibility: visible ;
-  /*bottom: 93%;*/
+
 }
 
 .hide {
@@ -137,33 +141,4 @@
 }
 .blockquote p {
   display: inline;
-}
-
-.tagline {
-  font: "Lato", sans-serif;
-  font-size: 4vw;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
 }
