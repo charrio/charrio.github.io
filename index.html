@@ -188,13 +188,12 @@
 
 
     <div class="form-group col-xs-12 col-sm-12 col-md-6">
-      <form method="POST" action="https://formspree.io/hugsandsalsa@gmail.com">
+      <form id="contactform" method="POST" >
         <input class="form-control" type="email" name="email" placeholder="Your email" required>
         <textarea class="form-control" rows="6" name="message" placeholder="Request details" required></textarea>
         <input type="text" name="_gotcha" style="display:none" />
         <input type="hidden" name="_subject" value="New Request!" />
-        <input type="hidden" name="_next" value="//site.io/thanks.html" />
-        <button class="btn" type="submit">Send</button>
+        <button id="sendMessage" class="btn" type="submit">Send</button>
       </form>
     </div>
 
@@ -269,6 +268,20 @@ var locationArray = new Array
 for (i = 0; i < links.length; i++) {
    locationArray[i]= markers[i].offsetTop-110;
 }
+
+var message = "";
+
+$("#sendMessage").on("click", function() {
+    message = $("#contactform").serialize();
+    $.ajax({
+        url: "//formspree.io/dynamicrealities@gmail.com",
+        method: "POST",
+        data: {message: message},
+        dataType: "json"
+    });
+    alert('Thanks for the email, we\'ll be in touch promptly.');
+    return false;
+});
 
 
 function stickIt() {
