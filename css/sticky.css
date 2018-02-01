@@ -24,7 +24,19 @@
 
 @media (min-width: 768px) {
     .sticky{
-      bottom:93%;
+      bottom:91.5%;
+    }
+
+    .navbar a.active {
+      background-color: #ffffff;
+      color: #16b6d9;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+        background-color: #ffffff;
+        color: #16b6d9;
+        font-weight: bold;
     }
 }
 
@@ -41,17 +53,9 @@
   font-weight: bold;
 }
 
-.navbar a:hover {
-    background-color: #ffffff;
-    color: #16b6d9;
-    font-weight: bold;
-}
 
-.navbar a.active {
-  background-color: #ffffff;
-  color: #16b6d9;
-  font-weight: bold;
-}
+
+
 
 
 .navbar-brand {

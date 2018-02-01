@@ -36,7 +36,7 @@
 
 
 <nav id="navbar" class="navbar navbar-expand-md   ">
-  <a id ="link0" class="navbar-brand nav-link p-2" href="#linktotop"><icon class="fa fa-mixcloud fa-2x"></icon></a>
+  <a id ="link0" class="navbar-brand lnk nav-link p-2" href="#linktotop"><icon class="fa fa-mixcloud fa-2x"></icon></a>
 
      <button class="btn navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="fa fa-bars"></span>
@@ -67,7 +67,7 @@
 </nav>
 <div class="content" >
 
-  <div id ="about" class="marker hide"></div>
+
   <h4 class="tagline" >Hello!  My name is Lorna B.  </h4>
   <p> <span class="accentuate"> Hugs &amp; Salsa </span> is a global salsa dance journey inspired from my travels as a community health promoter in Latin America and my dance background and upbringing in Puerto Rico. </p>
   <ul>
@@ -78,10 +78,13 @@
   </ul>
 </div>
 <div id ="bg2" class="bg2 parallax" >
+  <div id ="about" class="marker hide"></div>
   <div class = "caption">
     <span class="border">  ABOUT </span>
+
   </div>
 </div>
+
 <div class="content" >
 
   <h3> Workshops, Private Lessons & Event Entertainment</h3>
@@ -95,12 +98,14 @@
   </div>
 </div>
 <div id="bg3" class="parallax bg3" >
+  <div id ="bio" class="marker hide"></div>
   <div class = "caption">
     <span class="border">  BIO </span>
+
   </div>
 </div>
 <div class="content" >
-    <div id ="bio" class="marker hide"></div>
+
   <div class="blockquote">
     <p class="quote">As a conscientious and dynamic dancer, I care to encourage peer connections, intersectionality, body ownership, and holistic cross-training for my students, to support their unique style and empowered expression.</p>
 
@@ -111,13 +116,15 @@
 </div>
 </div>
 <div id="bg3" class="parallax bg3" >
+  <div id ="journey" class="marker hide"></div>
   <div class = "caption">
     <span class="border">  OUR JOURNEY </span>
+
   </div>
 </div>
 
 <div class="content" >
-  <div id ="journey" class="marker hide"></div>
+
 
   <h3> Follow us as we travel the globe.</h3>
   <p> If I am near your area, you can request a visit to your studio. </p>
@@ -125,21 +132,22 @@
         </div>
 </div>
 <div id="bg5" class="parallax bg5" >
+  <div id ="collaborate" class="marker hide"></div>
   <div class = "caption">
     <span class="border">  COLLABORATE </span>
+
   </div>
 </div>
 
 
   <div class="content" >
-    <div id ="collaborate" class="marker hide"></div>
+
     <h3>Who Can Collaborate?</h3>
-    <div>
-      <div class="row">
-        <div class="col-sm-3 col-md-3"><img src="assets/yoga.png" width="80%"/></div>
-        <div class="col-sm-3 col-md-3"><img src="assets/pole2.png" width="80%" /></div>
-        <div class="col-sm-3 col-md-3"><img src="assets/taino.jpg" width="70%"/></div>
-        <div class="col-sm-3 col-md-3"><img src="assets/home.png" width="70%"/></div>
+      <div class="row row-eq-height">
+        <div class="col-6 col-sm-3 col-md-3"><img src="assets/yoga.png" width="80%"/></div>
+        <div class="col-6 col-sm-3 col-md-3"><img src="assets/pole2.png" width="80%" /></div>
+        <div class="col-6 col-sm-3 col-md-3"><img src="assets/taino.jpg" width="70%"/></div>
+        <div class="col-6 col-sm-3 col-md-3"><img src="assets/home.png" width="70%"/></div>
       </div>
       <br />
       <p>Curious on how YOU can make a difference in this project? </p>
@@ -152,19 +160,20 @@
       <p>  Please do send me a message!</p>
 
     </div>
-  </div>
+
  </div>
 <div id="bg5" class="parallax bg5" >
+  <div id ="contact" class="marker hide"></div>
   <div class = "caption">
     <span class="border">  CONTACT </span>
+
   </div>
 </div>
   <div class="content" >
-    <div id ="contact" class="marker hide"></div>
+
     <p class ="tagline">  </p>
+
 <div class="row" >
-
-
     <div class="col-xs-12  col-sm-12 col-md-6 signature">
     <ul>
       <li class="salsaBlue"><strong> Hugs &amp; Salsa </strong></li>
@@ -191,7 +200,7 @@
 
     </div>
   </div>
-<div class="  navbar">
+<div class="navbar social">
   <ul class="nav mr-auto ml-auto ">
     <li class="nav-item">
       <a class="nav-link p-3" href="https://www.instagram.com/bailaalliance352/" target="_blank" rel="noopener" aria-label="GitHub">
@@ -247,16 +256,19 @@
    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEb9wqbopL8XYyyF4MsN5_JURDMOqpwO0&callback=initMap">
    </script>
 <script>
-window.onscroll = function() {myFunction()};
+$(document).ready(function(){
+window.onscroll = function() {responsiveNavbar()};
 
-var markers =  document.getElementsByClassName("marker");
+var markers =  document.getElementsByClassName("parallax");
 var links =  document.getElementsByClassName("lnk");
-var navbar = document.getElementById("navbar"); /*raNK */
+
+
+var navbar = document.getElementById("navbar");
+var navLoc = navbar.offsetTop;
 var locationArray = new Array
 for (i = 0; i < links.length; i++) {
-   locationArray[i]= markers[i].offsetTop;
+   locationArray[i]= markers[i].offsetTop-110;
 }
-var navLoc = navbar.offsetTop;
 
 
 function stickIt() {
@@ -278,7 +290,7 @@ function stickIt() {
 function highlight(rank){
 
 
-  for (i=0; i<=links.length; i++){
+  for (i=0; i< links.length; i++){
       link = links[i]
       if (i == rank) {
         link.classList.add("active");
@@ -290,27 +302,32 @@ function highlight(rank){
 
 }
 
-function myFunction(){
+function responsiveNavbar(){
 
   var i;
   stickIt();
   stop = false;
   first = false;
+
   for (i = 0; i < markers.length && stop == false; i++) {
-
-      if( window.pageYOffset >= locationArray[i] ){
+      var windowLoc = window.pageYOffset;
+      if( windowLoc >= locationArray[i] ){
         if(first == false) first= true;
-
-
       }
       else {
-        if(first == true) highlight(i-1);
-        stop = true;
+        if(first == true) {
+          highlight(i-1);
+          stop = true;
+       }
+      }
+      if (stop==false && (i+1) == markers.length) {
+        var id =  first == true ? i :-1;
+        highlight(id) ;
       }
 
   }
 }
-
+})
 </script>
 
 </html>
