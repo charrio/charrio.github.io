@@ -188,7 +188,7 @@
 
 
     <div class="form-group col-xs-12 col-sm-12 col-md-6">
-      <form id="contactform" method="POST" >
+      <form id="contactForm" method="POST" >
         <input class="form-control" type="email" name="email" placeholder="Your email" required>
         <textarea class="form-control" rows="6" name="message" placeholder="Request details" required></textarea>
         <input type="text" name="_gotcha" style="display:none" />
@@ -272,9 +272,9 @@ for (i = 0; i < links.length; i++) {
 var message = "";
 
 $("#sendMessage").on("click", function() {
-    message = $("#contactform").serialize();
+    message = $("#contactForm").serialize();
     $.ajax({
-        url: "//formspree.io/dynamicrealities@gmail.com",
+        url: "//formspree.io/hugsandsalsa@gmail.com",
         method: "POST",
         data: {message: message},
         dataType: "json"
