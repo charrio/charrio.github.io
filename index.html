@@ -132,6 +132,59 @@
   <p> If I am near your area, you can request a visit to your studio. </p>
 <div id="map" width="100%">
         </div>
+        <br />
+        <h5><strong>Tentative Touring Schedule</strong></h5>
+
+        <table class="table table-striped table-bordered table-condensed">
+          <thead>
+               <tr>
+                 <th>Location</th>
+                 <th>Date</th>
+                 <th>Note</th>
+               </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>Gainesville, FL, USA</td>
+               <td>Feb, 13, 2018</td>
+               <td>Home Sweet Home</td>
+             </tr>
+             <tr>
+               <td>San Jose, CA, USA</td>
+               <td>Feb, 14, 2018</td>
+               <td>Let the adventure begin</td>
+             </tr>
+             <tr>
+               <td>Portland, OR, USA</td>
+               <td>Mar, 01, 2018</td>
+             </tr>
+             <tr>
+               <td>Bozeman, MT, USA</td>
+               <td>Mar, 08, 2018</td>
+             </tr>
+             <tr>
+               <td>San Francisco, CA, USA</td>
+               <td>Mar, 16, 2018</td>
+             </tr>
+             <tr>
+               <td>Kailua-Kona, HI, USA</td>
+               <td>Mar, 17, 2018</td>
+             </tr>
+             <tr>
+               <td>Osaka, Japan</td>
+               <td>Apr, 01, 2018</td>
+             </tr>
+             <!-- <tr>
+               <td>Kyoto, Japan</td>
+               <td>Apr, 08, 2018</td>
+             </tr>
+             <tr>
+               <td>Tokyo, Japan</td>
+               <td>Apr, 10, 2018</td>
+             </tr> --> 
+          </tbody>
+         </table>
+
 </div>
 <div id="bg5" class="parallax bg5" >
   <div id ="collaborate" class="marker hide"></div>
@@ -225,33 +278,89 @@
 <script src="https://use.fontawesome.com/b189690ffa.js"></script>
 <script>
 
+
+
      function initMap() {
-       var myLatLng = {lat: 37.333, lng: -121.894};
-       var latLng2 = {lat: 45.512, lng: -122.666};
-       var latLng3 = {lat: 45.988, lng: -123.925};
+       var flightPlanCoordinates = [
+
+         {lat: 29.651, lng:  -82.324},
+         {lat: 37.333, lng: -121.894},
+         {lat: 45.512, lng: -122.666},
+         {lat: 45.988, lng: -123.925},
+         {lat: 45.676, lng: -111.042},
+         {lat: 37.733, lng: -122.446},
+         {lat: 19.639, lng: -155.997},
+         {lat: 34.652500, lng: 135.506302}
+
+       ];
+
 
        var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 4,
-         center: myLatLng
+         zoom: 3,
+         center: flightPlanCoordinates[1]
        });
 
+       var flightPath = new google.maps.Polyline({
+         path: flightPlanCoordinates,
+         geodesic: true,
+         strokeColor: '#FF0000',
+         strokeOpacity: 1.0,
+         strokeWeight: 2
+       });
+
+       flightPath.setMap(map);
+
        var marker = new google.maps.Marker({
-         position: myLatLng,
+         position: flightPlanCoordinates[0],
+         map: map,
+         title: 'Gainesville, FL'
+       });
+
+       var marker1 = new google.maps.Marker({
+         position: flightPlanCoordinates[1],
          map: map,
          title: 'San Jose, CA'
        });
 
        var marker2 = new google.maps.Marker({
-         position: latLng2,
+         position: flightPlanCoordinates[2],
          map: map,
          title: 'Portland, OR'
        });
 
        var marker3 = new google.maps.Marker({
-         position: latLng3,
+         position: flightPlanCoordinates[3],
          map: map,
          title: 'Seaside, OR'
        });
+
+       var marker4 = new google.maps.Marker({
+         position: flightPlanCoordinates[4],
+         map: map,
+         title: 'Bozeman, MT'
+       });
+
+       var marker5 = new google.maps.Marker({
+         position: flightPlanCoordinates[5],
+         map: map,
+         title: 'San Francisco, CA'
+       });
+
+       var marker6 = new google.maps.Marker({
+         position: flightPlanCoordinates[6],
+         map: map,
+         title: 'Kailua-Kona, HI'
+       });
+
+       var marker7 = new google.maps.Marker({
+         position: flightPlanCoordinates[7],
+         map: map,
+         title: 'Osaka, Japan'
+       });
+
+
+
+
      }
    </script>
    <script async defer
