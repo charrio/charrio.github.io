@@ -18,6 +18,15 @@ body, html {
 
 }
 
+.caption-low {
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
 .caption {
   position: absolute;
   left: 0;
