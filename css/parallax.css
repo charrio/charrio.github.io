@@ -103,13 +103,19 @@ h2 {
 
 .bg4 {
 	/* The image used */
-    background-image: url("assets/bg4.jpg");
+    background-image: url("assets/ourJourney.jpg");
     min-height: 400px;
 }
 
 .bg5 {
 	/* The image used */
     background-image: url("assets/bg5.jpg");
+    min-height: 400px;
+}
+
+.bg6 {
+	/* The image used */
+    background-image: url("assets/superwoman.jpg");
     min-height: 400px;
 }
 
