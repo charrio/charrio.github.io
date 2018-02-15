@@ -73,7 +73,7 @@ h2 {
 }
 
 
-.bg1, .bg2, .bg3, .bg4, .bg5 {
+.bg1, .bg2, .bg3, .bg4, .bg5, .bg6 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -103,13 +103,19 @@ h2 {
 
 .bg4 {
 	/* The image used */
-    background-image: url("assets/bg4.jpg");
+    background-image: url("assets/danceTogether2.jpg");
     min-height: 400px;
 }
 
 .bg5 {
 	/* The image used */
-    background-image: url("assets/bg5.jpg");
+    background-image: url("assets/BoDiddley.jpg");
+    min-height: 400px;
+}
+
+.bg6 {
+	/* The image used */
+    background-image: url("assets/beachPole.jpg");
     min-height: 400px;
 }
 
